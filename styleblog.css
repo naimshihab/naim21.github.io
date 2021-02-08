@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ddd;
+    position: relative;
+    background-image: url(image/bodyback.png);
+}
+
+@font-face {
+    font-family: fontarr;
+    src: url('font/Aaargh.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: fontoswald;
+    src: url('font/Oswald-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: sanspro;
+    src: url('font/SourceSansPro-Semibold.otf') format('truetype');
+}
+
+.arrowtop {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    font-size: 30px;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.arrowtop:hover {
+    box-shadow: 0 0 4px white;
+}
+
+
+
+/* Header */
+.header {
+    background-color: #333;
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid rgb(31, 235, 167);
+    box-shadow: 0 0 5px black;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: fontarr;
+    padding-top: 15px;
+    font-weight: bold;
+    animation: headerh1 1s ease infinite alternate-reverse;
+    cursor: default;
+}
+
+@keyframes headerh1 {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgb(45, 209, 221);
+        text-shadow: 1px 1px 2px rgb(25, 194, 129);
+    }
+}
+
+/* Last Header */
+
+/* Navbar */
+
+
+.navbar-brand {
+    font-family: 'Hammersmith One', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.nav-link {
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: sanspro;
+    font-size: 20px;
+}
+
+/* last Navbar */
+
+/* Main */
+.kolom-utama {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    background-color: #eaeaea;
+}
+
+.satu {
+    background-color: grey;
+    padding: 15px 20px 20px;
+    cursor: default;
+}
+
+.satu h2 {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    /* background-color: salmon; */
+    margin-top: 10px;
+}
+
+.satu .mobileh2 {
+    font-size: 26px;
+}
+
+.satu p {
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.paragraf-satu {
+    color: white;
+    font-family: 'Pangolin', cursive;
+}
+
+.paragraf-dua {
+    color: white;
+    font-family: 'Pangolin', cursive;
+}
+
+.paragraf-tiga {
+    color: white;
+    font-family: 'Pangolin', cursive;
+}
+
+.paragraf-empat {
+    color: white;
+    font-family: 'Pangolin', cursive;
+}
+
+.paragraf-lima {
+    color: white;
+    font-family: 'Pangolin', cursive;
+}
+
+
+.satu img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.satu .image2 {
+    height: 200px;
+}
+
+.satu .image3 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    margin-left: 15px;
+}
+
+.satu .image4 {
+    width: 250px;
+    height: 150px;
+    float: right;
+    margin-left: 15px;
+}
+
+.satu .image5 {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+.satu .image6 {
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+/* Last Main */
+
+
+
+
+
+/* Sidebar */
+
+.dua {
+    background-color: rgb(209, 209, 209);
+    padding: 15px 20px 20px;
+    cursor: default;
+}
+
+.kartu1 {
+    margin: auto;
+    margin-bottom: 15px;
+    border-top: 3px solid blue;
+    transition: 0.2s ease;
+}
+
+.kartu1:hover {
+    box-shadow: 0 0 4px black;
+}
+
+.dua .card-text {
+    font-family: 'Sriracha', cursive;
+}
+
+.kartu2 h2 {
+    font-family: 'Londrina Solid', cursive;
+    color: rgb(53, 148, 226);
+    word-spacing: 3px;
+}
+
+.button-about {
+    /* background-color: salmon; */
+    text-align: center;
+}
+
+.button-about .card {
+    margin-top: 10px;
+    animation: aboutme 2s ease infinite alternate-reverse;
+}
+
+.button-about h5 {
+    line-height: 100%;
+}
+
+@keyframes aboutme {
+    0% {
+        box-shadow: 0 0 0;
+    }
+
+    50% {
+        box-shadow: 0 0 5px black;
+    }
+
+    100% {
+        box-shadow: 0 0 12px rgb(24, 211, 170);
+    }
+}
+
+.button-about .card img {
+    width: 150px;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid rgb(43, 226, 141);
+    animation: aboutme 2s ease infinite alternate-reverse;
+}
+
+.button-about .card h5 {
+    margin-top: 10px;
+}
+
+.button-about .card .paragraf-satubold {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.button-about .instagram a {
+    color: rgb(247, 48, 48);
+}
+
+.button-about .whatsapp a {
+    color: rgb(17, 226, 122);
+}
+
+.button-about .facebook a {
+    color: rgb(48, 151, 247);
+}
+
+.berita-terkini {
+    margin-top: 15px;
+}
+
+.berita-terkini h3 {
+    font-family: 'Acme', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.list-group img {
+    width: 100px;
+    float: right;
+    margin-left: 10px;
+}
+
+/* Last Sidebar */
+
+/* Video Youtube Desktop */
+
+.ytdesktop1 {
+    text-align: right;
+    padding: 15px 10px 35px 15px;
+}
+
+.ytdesktop2 {
+    text-align: left;
+    padding: 15px 15px 35px 10px;
+}
+
+.ytdesktop iframe {
+    width: 450px;
+    height: 250px;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    box-shadow: 0 0 3px black;
+}
+
+.ytdesktop p {
+    font-weight: bold;
+}
+
+.ytdesktop1 p {
+    position: absolute;
+    right: 115px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ytdesktop2 p {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Last Video Youtube Desktop */
+
+
+/* Video Youtube Mobile */
+
+.ytmobile1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.ytmobile2 {
+    text-align: center;
+}
+
+.ytmobile iframe {
+    width: 50vmax;
+    height: 200px;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    box-shadow: 0 0 3px black;
+}
+
+.ytmobile p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.ytmobile2 p {
+    font-size: 13px;
+}
+
+.arrowtopmobile {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-size: 30px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.arrowtopmobile:hover {
+    box-shadow: 0 0 3px white;
+}
+
+/* Last Video Youtube Mobile */
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 15px;
+    border-top: 5px solid lightskyblue;
+    box-shadow: 0 0 5px black;
+    cursor: default;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Last Footer */
